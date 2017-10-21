@@ -27,7 +27,7 @@ class Perceptron():
 	# Detect if the expected result was accomplished, if it happened I will reinforce the weights in order to start the learning process
 	def evaluate(self, predict_result):
 		if(predict_result >= self.expected_value):
-			print "Go to the light"
+			print "In the Light"
 			# If the prediction is correct, I will reinforce the weights based on the delta between the expected and the getted value, taking in consideration the learn speed variable
 			delta_error = (predict_result - self.expected_value)
 			for weight in self.input_weights:
