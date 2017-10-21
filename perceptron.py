@@ -40,7 +40,7 @@ class Perceptron():
 		self.inputs = inputs
 		self.expected_value = inputs[0]
 
-# Training funciton for the Simple Neural System
+# Training function for the Simple Neural System
 def training():
 	sensor_input = [0,0]
 	perceptron = Perceptron(sensor_input)
