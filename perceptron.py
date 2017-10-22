@@ -71,5 +71,5 @@ def main():
 		perceptron.set_inputs(sensor_input)
  		perceptron.calculate_decision()
 
-#training()
+training()
 main()
