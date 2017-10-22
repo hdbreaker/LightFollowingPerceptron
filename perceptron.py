@@ -43,8 +43,10 @@ class Perceptron():
 		else:
 			print "I am seeing Darkness! I don not want to move in that direction"
 			print "Activate Rotation"
+		# The future decitson has to be better than the old decision
 		self.expected_value = decision
-		self.inputs[0] = self.inputs[1]
+		# Store the input as old input just for if I need it in a future feature
+		self.inputs[0] = self.inputs[1] 
 
 	# Simple Setter to modify inputs on the fly
 	def set_inputs(self, inputs):
