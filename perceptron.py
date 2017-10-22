@@ -8,10 +8,12 @@ class Perceptron():
 		self.learning_speed = 0.02
 		self.input_weights = []
 		self.expected_value = inputs[0]
+		self.bias = -1 # => Constant necessary for a better result prediction
 		self.init_weight()
 		
 	# Initial weigths for all the inputs
 	def init_weight(self):
+		self.inputs.append(self.bias)
 		for input in self.inputs:
 			self.input_weights.append(random.random())
 
@@ -44,7 +46,7 @@ class Perceptron():
 def training():
 	sensor_input = [0,0]
 	perceptron = Perceptron(sensor_input)
-	for i in range(2000):
+	for i in range(10000):
 		if(i == 0):
 			sensor_input[0] = 0
 			sensor_input[1] = 0
