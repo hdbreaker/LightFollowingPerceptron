@@ -41,7 +41,7 @@ class Perceptron():
 	def set_inputs(self, inputs):
 		self.inputs = inputs
 		self.expected_value = inputs[0]
-
+	
 # Training function for the Simple Neural System
 def training():
 	sensor_input = [0,0]
